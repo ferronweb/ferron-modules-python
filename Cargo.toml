@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "ferron-module-asgi",
+    "ferron-module-wsgi",
+    "ferron-module-wsgid",
+    "ferron-modules-wsgi-common",
+]
+resolver = "2"
+
+[workspace.dependencies]
+ferron-common = { git = "https://github.com/ferronweb/ferron.git", branch = "develop-2.x" }
+ferron-modules-wsgi-common = { path = "./ferron-modules-wsgi-common" }
+pyo3 = { version = "0.25.0", features = ["anyhow", "auto-initialize"] }
