@@ -131,10 +131,22 @@ After modifying the `ferron-build-override.yaml` file, you can compile Ferron wi
 make build
 ```
 
+Or if you're on Windows:
+
+```batch
+powershell -ExecutionPolicy Bypass .\build.ps1 Build
+```
+
 You can then package it in a ZIP archive using the following command:
 
 ```bash
 make package
+```
+
+Or if you're on Windows:
+
+```batch
+powershell -ExecutionPolicy Bypass .\build.ps1 Package
 ```
 
 The ZIP archive will be created in the `dist` directory, and can be installed using Ferron installer.
