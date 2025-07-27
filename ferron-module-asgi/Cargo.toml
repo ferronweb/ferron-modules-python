@@ -26,5 +26,5 @@ monoio = { version = "0.2.4", optional = true }
 
 [features]
 default = ["runtime-monoio"]
-runtime-monoio = ["monoio"]
-runtime-tokio = []
+runtime-monoio = ["ferron-common/runtime-monoio", "monoio"]
+runtime-tokio = ["ferron-common/runtime-tokio"]

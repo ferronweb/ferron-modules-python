@@ -20,10 +20,10 @@ tokio-util = "0.7.15"
 monoio = { version = "0.2.4", optional = true }
 urlencoding = "2.1.3"
 
-[features]
-default = ["runtime-monoio"]
-runtime-monoio = ["monoio"]
-runtime-tokio = []
-
 [dev-dependencies]
 async-channel = "2.5.0"
+
+[features]
+default = ["runtime-monoio"]
+runtime-monoio = ["ferron-common/runtime-monoio", "monoio"]
+runtime-tokio = ["ferron-common/runtime-tokio"]
