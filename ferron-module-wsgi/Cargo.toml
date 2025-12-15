@@ -11,7 +11,7 @@ ferron-common = { workspace = true }
 ferron-modules-wsgi-common = { workspace = true }
 futures-executor = "0.3.31"
 futures-util = "0.3.31"
-hashlink = "0.10.0"
+hashlink = "0.11.0"
 http-body-util = "0.1.3"
 hyper = "1.6.0"
 pyo3 = { workspace = true }
